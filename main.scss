@@ -1,0 +1,45 @@
+$color-blueish: #D6E1EE;
+$color-white: #FFF;
+$color-darkblue: hsl(218, 44%, 22%);
+$color-grayish: hsl(220, 15%, 55%);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    font-size: 15px;
+    background-color: $color-blueish;
+}
+
+.bloc-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 620px;
+}
+.container {
+    width: 325px;
+    height: 485px;
+    padding: 20px;
+    background-color: $color-white;
+    border-radius: 1rem;
+        & img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+        & h1{
+            font-size: 1.4rem;
+            color: $color-darkblue;
+            padding-top: 1rem;
+        }
+        & p{
+            color: $color-grayish;
+            padding: 1rem;
+        }
+}
